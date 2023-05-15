@@ -18,6 +18,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+import matplotlib.pyplot as plt
 data = pd.read_csv('chatgpt1.csv',nrows=10000, encoding="ISO-8859-1")
 
 
@@ -121,7 +122,6 @@ from sklearn.metrics import silhouette_score
 # In[ ]:
 
 
-import matplotlib.pyplot as plt
 
 # Compute silhouette score
 silhouette_avg = silhouette_score(X, clusters)
